@@ -8,11 +8,13 @@
 
 <h1>Diverse Politicians Make More Successful Countries</h1>
 
-<p>Gender of candidates of the Dutch general election 2017:</p>
+<p>If you are a responsible citizen, you better elect a diverse set of politicians. It turns out, whether you support diversity for ideological reasons or not (is it the <em>right</em> thing to do?), it is in fact the <em>smart</em> thing to do.</p>
+
+<p>But let's have a look at the data. As a first example, let's pick the Netherlands. A first important dimension of diversity is the gender distribution of politicians. The following chart shows the gender distribution of candidates of the Dutch general election 2017:</p>
 
 <p><iframe style="width:100%; height:50vh; border:none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0ASELECT%20%3FgenderLabel%20%28COUNT%28%3FgenderLabel%29%20as%20%3Fnumber%29%20WHERE%20%7B%0A%20%20%3Fitem%20p%3AP3602%20%3Fnode.%0A%20%20%3Fitem%20wdt%3AP21%20%3Fgender.%0A%20%20%3Fitem%20wdt%3AP106%20%3Foccupation.%0A%20%20%3Fnode%20ps%3AP3602%20wd%3AQ16061881.%0A%20%20%3Fnode%20pq%3AP1545%20%3Fpositie_op_lijst.%0A%20%20%3Fnode%20pq%3AP1268%20%3Fpolitieke_partij.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AGROUP%20BY%20%3FgenderLabel%0AORDER%20BY%20DESC%28%3Fnumber%29%0ALIMIT%2020"></iframe></p>
 
-<p>And here as comparison, the genders of politicians from Yemen:</p>
+<p>The Netherlands are clearly still quite a bit away from an equal distribution, but women make up a considerable share of Dutch politicians. Other countries like Yemen clearly show a much less equal distribution and therefore lower degree of diversity:</p>
 
 <p><iframe style="width:100%; height:50vh; border:none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0ASELECT%20%3FgenderLabel%20%28COUNT%28%3Fgender%29%20as%20%3Fc%29%20WHERE%20%7B%0A%20%20%3Fperson%20p%3AP106%20%3Fo.%0A%20%20%3Fo%20%20ps%3AP106%20wd%3AQ82955.%0A%20%20%3Fperson%20p%3AP27%20%3Fcountrys.%0A%20%20%3Fcountrys%20ps%3AP27%20%3Fcountry.%0A%20%20%3Fcountrys%20ps%3AP27%20wd%3AQ805.%0A%20%20%3Fperson%20p%3AP21%20%3Fgenders.%0A%20%20%3Fgenders%20ps%3AP21%20%3Fgender.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AGROUP%20BY%20%3FcountryLabel%20%3FgenderLabel%0ALIMIT%20100"></iframe></p>
 
