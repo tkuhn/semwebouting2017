@@ -40,7 +40,7 @@
 
 <p><iframe style="width:100%; height:50vh; border:none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABarChart%0ASELECT%20%3FoccupationLabel%20%28COUNT%28%3FoccupationLabel%29%20as%20%3Fnumber%29%20WHERE%20%7B%0A%20%20%3Fperson%20p%3AP106%20%3Foccupations.%0A%20%20%3Foccupations%20ps%3AP106%20wd%3AQ82955.%0A%20%20%3Fperson%20p%3AP106%20%3Foccupationsx.%0A%20%20%3Foccupationsx%20ps%3AP106%20%3Foccupation.%0A%20%20%3Fperson%20p%3AP27%20%3Fcountrys.%0A%20%20%3Fcountrys%20ps%3AP27%20%3Fcountry.%0A%20%20%3Fcountrys%20ps%3AP27%20wd%3AQ805.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AGROUP%20BY%20%3FoccupationLabel%0AORDER%20BY%20DESC%28%3Fnumber%29%0ALIMIT%2020%0AOFFSET%201"></iframe></p>
 
-<p>Instead of writers and trade unionist, we see now diplomats and military personnel.</p>
+<p>Instead of writers and trade unionist, we see now diplomats and military personnel. Or in other words, instead of independent thinkers and politicians with a close connection to workers, we have members of the elite in diplomacy and army.</p>
 
 <!--
 <p>Human Development Index by country:</p>
@@ -48,13 +48,19 @@
 <p><iframe style="width:100%; height:50vh; border:none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABarChart%0ASELECT%20%3FaLabel%20%3Fe%20WHERE%20%7B%0A%20%20%3Fa%20p%3AP1081%20%3Fb.%0A%20%20%3Fb%20pq%3AP585%20%3Fd.%0A%20%20%3Fb%20ps%3AP1081%20%3Fe.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20FILTER%20%28%3Fd%20%3D%20%222014-01-01T00%3A00%3A00Z%22%5E%5Exsd%3AdateTime%29%0A%7D%0AGROUP%20BY%20%3FaLabel%20%3Fe%0AORDER%20BY%20DESC%28%3Fe%29"></iframe></p>
 -->
 
-<p>Human Development Index of some countries:</p>
+<p>So, we have seen that countries like the Netherlands are quite different in terms of diversity in politics. But does it matter? Except for ideological reasons?</p>
+
+<p>It does. We can see that when looking at the Human Development Index, for example:</p>
 
 <p><iframe style="width:100%; height:50vh; border:none;" frameborder="0" src="https://query.wikidata.org/embed.html#%23defaultView%3ABarChart%0ASELECT%20%3FcountryLabel%20%3Fe%20WHERE%20%7B%0A%20%20%3Fcountry%20p%3AP1081%20%3Fb.%0A%20%20%3Fcountry%20p%3AP1125%20%3Fg.%0A%20%20%3Fb%20pq%3AP585%20%3Fd.%0A%20%20%3Fb%20ps%3AP1081%20%3Fe.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20FILTER%20%28%3Fd%20%3D%20%222014-01-01T00%3A00%3A00Z%22%5E%5Exsd%3AdateTime%29%0A%7D%0AGROUP%20BY%20%3FcountryLabel%20%3Fe%0AORDER%20BY%20DESC%28%3Fe%29"></iframe></p>
 
-<p>Gini Coefficient of the same countries:</p>
+<p>Diverse countries like the Netherlands fare much better in development than non-diverse countries like Yemen.</p>
+
+<p>But it's not just development that suffers from a lack of diversity in government. Countries with non-diverse politics also tend to be more unequal in general, as the Gini Coefficient shows:</p>
 
 <p><iframe style="width:100%; height:50vh; border:none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABarChart%0ASELECT%20%3FaLabel%20%28AVG%28%3Fe%29%20as%20%3Fgini%29%20WHERE%20%7B%0A%20%20%3Fa%20p%3AP1125%20%3Fb.%0A%20%20%3Fb%20pq%3AP585%20%3Fd.%0A%20%20%3Fb%20ps%3AP1125%20%3Fe.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%20%20FILTER%20%28%3Fe%20%3E%201%29%20%20%23%20data%20cleaning%0A%7D%0AGROUP%20BY%20%3FaLabel%0AORDER%20BY%20DESC%28%3Fgini%29"></iframe></p>
+
+<p>The bottom line is, whether you support diversity for ideological reasons or not, countries with diverse politicians are more successful, more developed, and suffer less from inequality. If your country wants to be successful in the future, the data suggest, it should better make sure to pay attention to the diversity of its politicians.</p>
 
 <!--
 <p>Human Development Index versus Gini:</p>
