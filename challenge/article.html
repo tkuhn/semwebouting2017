@@ -18,21 +18,29 @@
 
 <p><iframe style="width:100%; height:50vh; border:none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0ASELECT%20%3FgenderLabel%20%28COUNT%28%3Fgender%29%20as%20%3Fc%29%20WHERE%20%7B%0A%20%20%3Fperson%20p%3AP106%20%3Fo.%0A%20%20%3Fo%20%20ps%3AP106%20wd%3AQ82955.%0A%20%20%3Fperson%20p%3AP27%20%3Fcountrys.%0A%20%20%3Fcountrys%20ps%3AP27%20%3Fcountry.%0A%20%20%3Fcountrys%20ps%3AP27%20wd%3AQ805.%0A%20%20%3Fperson%20p%3AP21%20%3Fgenders.%0A%20%20%3Fgenders%20ps%3AP21%20%3Fgender.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AGROUP%20BY%20%3FcountryLabel%20%3FgenderLabel%0ALIMIT%20100"></iframe></p>
 
+<!--
 <p>Occupations of candidates of the Dutch general election 2017:</p>
 
 <p><iframe style="width:100%; height:50vh; border:none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABarChart%0ASELECT%20%3FoccupationLabel%20%28COUNT%28%3FoccupationLabel%29%20as%20%3Fnumber%29%20WHERE%20%7B%0A%20%20%3Fitem%20p%3AP3602%20%3Fnode.%0A%20%20%3Fitem%20wdt%3AP21%20%3Fgender.%0A%20%20%3Fitem%20wdt%3AP106%20%3Foccupation.%0A%20%20%3Fnode%20ps%3AP3602%20wd%3AQ16061881.%0A%20%20%3Fnode%20pq%3AP1545%20%3Fpositie_op_lijst.%0A%20%20%3Fnode%20pq%3AP1268%20%3Fpolitieke_partij.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AGROUP%20BY%20%3FoccupationLabel%0AORDER%20BY%20DESC%28%3Fnumber%29%0ALIMIT%2020"></iframe></p>
+-->
 
-<p>And the same chart without the 'politician' category:</p>
+<p>But let's have a look at a different aspect. What about the politicians' occupations, besides being politicians? Of 806 politicians in the Netherlands, these are thier top side-occupations:</p>
 
 <p><iframe style="width:100%; height:50vh; border:none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABarChart%0ASELECT%20%3FoccupationLabel%20%28COUNT%28%3FoccupationLabel%29%20as%20%3Fnumber%29%20WHERE%20%7B%0A%20%20%3Fitem%20p%3AP3602%20%3Fnode.%0A%20%20%3Fitem%20wdt%3AP21%20%3Fgender.%0A%20%20%3Fitem%20wdt%3AP106%20%3Foccupation.%0A%20%20%3Fnode%20ps%3AP3602%20wd%3AQ16061881.%0A%20%20%3Fnode%20pq%3AP1545%20%3Fpositie_op_lijst.%0A%20%20%3Fnode%20pq%3AP1268%20%3Fpolitieke_partij.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AGROUP%20BY%20%3FoccupationLabel%0AORDER%20BY%20DESC%28%3Fnumber%29%0ALIMIT%2020%0AOFFSET%201"></iframe></p>
 
+<p></p>
+
+<!--
 <p>Occupations of politicians in Yemen:</p>
 
 <p><iframe style="width:100%; height:50vh; border:none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABarChart%0ASELECT%20%3FoccupationLabel%20%28COUNT%28%3FoccupationLabel%29%20as%20%3Fnumber%29%20WHERE%20%7B%0A%20%20%3Fperson%20p%3AP106%20%3Foccupations.%0A%20%20%3Foccupations%20ps%3AP106%20wd%3AQ82955.%0A%20%20%3Fperson%20p%3AP106%20%3Foccupationsx.%0A%20%20%3Foccupationsx%20ps%3AP106%20%3Foccupation.%0A%20%20%3Fperson%20p%3AP27%20%3Fcountrys.%0A%20%20%3Fcountrys%20ps%3AP27%20%3Fcountry.%0A%20%20%3Fcountrys%20ps%3AP27%20wd%3AQ805.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AGROUP%20BY%20%3FoccupationLabel%0AORDER%20BY%20DESC%28%3Fnumber%29%0ALIMIT%2020"></iframe></p>
+-->
 
-<p>And the same chart without the 'politician' category:</p>
+<p>There are many writers and trade unionists among Dutch politicians. Now, let's turn to Yemen again and look at the side-occupations of 338 politicians from Yemen:</p>
 
 <p><iframe style="width:100%; height:50vh; border:none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABarChart%0ASELECT%20%3FoccupationLabel%20%28COUNT%28%3FoccupationLabel%29%20as%20%3Fnumber%29%20WHERE%20%7B%0A%20%20%3Fperson%20p%3AP106%20%3Foccupations.%0A%20%20%3Foccupations%20ps%3AP106%20wd%3AQ82955.%0A%20%20%3Fperson%20p%3AP106%20%3Foccupationsx.%0A%20%20%3Foccupationsx%20ps%3AP106%20%3Foccupation.%0A%20%20%3Fperson%20p%3AP27%20%3Fcountrys.%0A%20%20%3Fcountrys%20ps%3AP27%20%3Fcountry.%0A%20%20%3Fcountrys%20ps%3AP27%20wd%3AQ805.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AGROUP%20BY%20%3FoccupationLabel%0AORDER%20BY%20DESC%28%3Fnumber%29%0ALIMIT%2020%0AOFFSET%201"></iframe></p>
+
+<p>Instead of writers and trade unionist, we see now diplomats and military personnel.</p>
 
 <!--
 <p>Human Development Index by country:</p>
